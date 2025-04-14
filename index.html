@@ -547,7 +547,6 @@
 <!-- <script src="js/Underscore-min.js"></script>
 <script src="js/index.js"></script> -->
 
-
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
@@ -557,13 +556,20 @@
 
   <!-- Combined figures in one section -->
   <div class="columns is-centered">
-    <img id="results" width="70%" src="demos/Evaluation.png">
+    <figure>
+      <img id="results" width="70%" src="demos/Evaluation.png" alt="LLM-generated music recommendations evaluation">
+      <figcaption>Figure 4: Evaluation of LLM-generated music recommendations based on prompt sensitivity. This figure compares recommendations from ChatGPT 4o and Gemini 1.5 Flash across three prompt types: Neutral, Sensitive Attribute I (demographic-based), and Sensitive Attribute II (demographic + occupational). The right panel summarizes user attributes (e.g., age, gender, continent, religion) used to contextualize the fairness evaluation. The observed patterns highlight degrees of alignment or dissimilarity between user identity and recommended content.</figcaption>
+    </figure>
   </div>
   
   <div class="columns is-centered">
-    <img id="results" width="70%" src="demos/f5-1.png">
+    <figure>
+      <img id="results" width="70%" src="demos/f5-1.png" alt="Robustness of LLMs under prompt perturbations">
+      <figcaption>Figure 5: Robustness of ChatGPT 4o (top) and Gemini 1.5 Flash (down) under prompt perturbations. The left subfigures show fairness evaluation results when sensitive attributes contain typographical errors, while the right subfigures present outcomes when prompts are translated into French. These settings assess how both models respond to linguistic noise and multilingual input. Gemini 1.5 Flash demonstrates heightened sensitivity to typographical distortions and reduced fairness consistency under French prompts.</figcaption>
+    </figure>
   </div>
 </section>
+
 
 <!-- <div id="main"> -->
   <!-- <div class="box"><div class="pic"><img src="demos/ad_1.png" alt=""></div></div>
@@ -592,6 +598,18 @@
   <div class="box"><div class="pic"><img src="demos/describe_1.png" alt=""></div></div>
   <div class="box"><div class="pic"><img src="demos/people_1.png" alt=""></div></div> -->
 
+<section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Conclusion</h2>
+      <div class="content has-text-justified">
+        <p>
+          In this work, we introduced the FairEval framework, which provides a comprehensive approach to evaluating fairness in LLM-based recommender systems. By incorporating both demographic attributes and personality traits, FairEval offers a more nuanced and reliable assessment of recommendation fairness. Our experiments with ChatGPT 4o and Gemini 1.5 Flash across music and movie recommendation tasks highlight significant disparities in fairness, underscoring the need for personality-aware metrics like PAFS. The robustness tests reveal the vulnerability of LLMs to prompt variations, which emphasizes the importance of considering linguistic noise and multilingual inputs in real-world applications. FairEval paves the way for more equitable and transparent recommender systems in the age of AI-driven content delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- </div> -->
 
