@@ -127,7 +127,7 @@
           </div>
 
           <div class="has-text-centered" style="color: #e63946; font-weight: bold; font-size: 1.5rem; margin-top: 0.5rem;">
-            Accepted to CVPR WDFM-AD Workshop 2025 🎉
+            Under review at a top-tier ACM conference in recommender systems🎉
           </div>
 
           <br>
@@ -397,8 +397,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The rapid growth of intelligent connected vehicles (ICVs) and integrated vehicle-road-cloud systems has increased the demand for accurate, real-time HD map updates. However, ensuring map reliability remains challenging due to inconsistencies in crowdsourced data, which suffer from motion blur, lighting variations, adverse weather, and lane marking degradation. This paper introduces CleanMAP, a Multimodal Large Language Model (MLLM)-based distillation framework designed to filter and refine crowdsourced data for high-confidence HD map updates. CleanMAP leverages an MLLM-driven lane visibility scoring model that systematically quantifies key visual parameters, assigning confidence scores (0-10) based on their impact on lane detection. A novel dynamic piecewise confidence-scoring function adapts scores based on lane visibility, ensuring strong alignment with human evaluations while effectively filtering unreliable data. To further optimize map accuracy, a confidence-driven local map fusion strategy ranks and selects the top-k highest-scoring local maps within an optimal confidence range (best score minus 10%), striking a balance between data quality and quantity. Experimental evaluations on a real-world autonomous vehicle dataset validate CleanMAP’s effectiveness, demonstrating that fusing the top three local maps achieves the lowest mean map update error of 0.28m, outperforming the baseline (0.37m) and meeting stringent accuracy thresholds (less than or equal to 0.32m). Further validation with real-vehicle data confirms 84.88% alignment with human evaluators, reinforcing the model’s robustness and reliability. This work establishes CleanMAP as a scalable and deployable solution for crowdsourced HD map updates, ensuring more precise and reliable autonomous navigation.
-          </p>
+            Recent advances in Large Language Models (LLMs) have enabled their application to recommender systems (RecLLMs), yet concerns remain regarding fairness across demographic and psychological user dimensions. We introduce FairEval, a novel evaluation framework to systematically assess fairness in LLM-based recommendations. Unlike prior benchmarks that focus solely on demographic attributes, FairEval uniquely integrates personality traits with eight sensitive demographic attributes, including gender, race, and age enabling a comprehensive and nuanced assessment of user-level bias. We evaluate state-of-the-art models, including ChatGPT 4o and Gemini 1.5 Flash, on music and movie recommendation tasks using structured prompts. FairEval’s personality-aware fairness metric, PAFS, achieves high consistency scores up to 0.9969 for ChatGPT 4o and 0.9997 for Gemini 1.5 Flash, underscoring its robustness in equitable recommendations across diverse user profiles, while also uncovering fairness gaps, with SNSR disparities reaching up to 34.79%. Our results also reveal disparities in recommendation consistency across user identities and prompt formulations, including typographical and multilingual variations. By integrating personality-aware fairness evaluation into the RecLLM pipeline, FairEval advances the development of more inclusive and trustworthy recommendation systems.
         </div>
       </div>
     </div>
@@ -473,10 +472,13 @@
     <!-- Paper Model. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-six-fifths">
-        <h2 class="title is-3">Model</h2>
+        <h2 class="title is-3">The Framework of FairEval</h2>
         <div class="content has-text-justified">
           <p>
-            <b>MiniGPT-v2 consists of three components: a visual backbone, a linear projection layer, and a large language model.</b>:
+            </b:> FairEval: A Framework for Evaluating Fairness in LLM-Based Recommender Systems. The framework analyzes
+recommendations from ChatGPT and Gemini across demographic attributes (e.g., age, gender, race, religion) using established
+fairness metrics—Jaccard@K, SERP*@K, PRAG*@K, PAFS@K—as well as disparity indicators (SNSR and SNSV). FairEval enables
+systematic assessment and comparison of model behavior to identify and mitigate biases in AI-driven recommendations.</b>:
           </p>
           <ul>
             <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
@@ -485,9 +487,9 @@
 
           </ul>
         </div>  
-        <img id="model" width="80%" src="images/overview.png">
+        <img id="model" width="80%" src="images/f2.pdf">
         <h3 class="subtitle has-text-centered">
-          <p style="font-family:Times New Roman"><b>The architecture of MiniGPT-v2.</b></p>
+          <p style="font-family:Times New Roman"><b>The Framework of FairEval.</b></p>
         </h3>   
         <br>
         <br>
@@ -507,7 +509,7 @@
 
 <section class="section">
   <div class="columns is-centered">
-    <img id="performance" width="50%" src="images/performance.png">
+    <img id="performance" width="50%" src="images/framework1.png">
   </div>
 </section> -->
 
@@ -518,7 +520,7 @@
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">Qualitative Results</h2>
+      <h2 class="title is-3">Results.</h2>
     </div>
   </div>
 </section>
