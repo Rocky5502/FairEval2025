@@ -420,7 +420,7 @@
 
     <!-- Image with Label: f1-1 -->
     <figure>
-      <img id="model" width="80%" src="images/f1-1.png" alt="FairEval Framework Evaluation of LLM-Generated Recommendations">
+      <img id="model" width="70%" src="images/f1-1.png" alt="FairEval Framework Evaluation of LLM-Generated Recommendations">
       <figcaption>Figure 1: An illustration of FairEval-generated movie recommendations under different prompt types.</figcaption>
     </figure>
   </div>
@@ -530,53 +530,44 @@
   </div>
 </section>
 
-<!-- <section class="section">
+
+     <!-- Third image section -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">Quantative Results</h2>
+      <h2 class="title is-3">Results </h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>Evaluation of LLM-generated music recommendations based on prompt sensitivity. This figure compares recommendations from ChatGPT 4o and Gemini 1.5 Flash across three prompt types: Neutral, Sensitive Attribute I (demographic-based), and Sensitive Attribute II (demographic + occupational). The right panel summarizes user attributes (e.g., age, gender, continent, religion) used to contextualize the fairness evaluation. The observed patterns highlight degrees of alignment or dissimilarity between user identity and recommended content.</b>
+        </p>
+      </div>  
+      <img id="model" width="80%" src="images/f4-1.png">
+      <h3 class="subtitle has-text-centered">
+        <p style="font-family:Times New Roman"><b>Results of LLM-generated movie and music recommendations.</b></p>
+      </h3>   
+      <br><br>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="columns is-centered">
-    <img id="performance" width="50%" src="images/framework1.png">
-  </div>
-</section> -->
 
-<!-- <script src="js/Underscore-min.js"></script>
-<script src="js/index.js"></script> -->
-
-<section class="section">
+       <!-- Fourth image section -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
-      <h2 class="title is-3">Results.</h2>
+      <h2 class="title is-3">Robustness Results of ChatGPT 4o and Gemini 1.5 Flash (LLMs) </h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>Robustness of ChatGPT 4o (top) and Gemini 1.5 Flash (down) under prompt perturbations. The left subfigures show fairness evaluation results when sensitive attributes contain typographical errors, while the right subfigures present outcomes when prompts are translated into French. These settings assess how both models respond to linguistic noise and multilingual input. Gemini 1.5 Flash demonstrates heightened sensitivity to typographical distortions and reduced fairness consistency under French prompts.</b>
+        </p>
+      </div>  
+      <img id="model" width="80%" src="images/f5-1.png">
+      <h3 class="subtitle has-text-centered">
+        <p style="font-family:Times New Roman"><b>Results of Robustness of LLMs under prompt perturbations.</b></p>
+      </h3>   
+      <br><br>
     </div>
-  </div>
-
-  <!-- Combined figures in one section -->
-  <div class="columns is-centered">
-    <figure>
-      <img id="results" width="80%" src="demos/Evaluation.png" alt="LLM-generated music recommendations evaluation">
-      <figcaption>Evaluation of LLM-generated music recommendations based on prompt sensitivity. This figure compares recommendations from ChatGPT 4o and Gemini 1.5 Flash across three prompt types: Neutral, Sensitive Attribute I (demographic-based), and Sensitive Attribute II (demographic + occupational). The right panel summarizes user attributes (e.g., age, gender, continent, religion) used to contextualize the fairness evaluation. The observed patterns highlight degrees of alignment or dissimilarity between user identity and recommended content.</figcaption>
-    </figure>
-  </div>
-
-
-  
-<section class="section">
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-six-fifths">
-      <h2 class="title is-3">Results of Robustness of LLMs under prompt perturbations.</h2>
-    </div>
-  </div>
-  <div class="columns is-centered">
-    <figure>
-      <img id="results" width="80%" src="demos/f5-1.png" alt="Robustness of LLMs under prompt perturbations">
-      <figcaption>Robustness of ChatGPT 4o (top) and Gemini 1.5 Flash (down) under prompt perturbations. The left subfigures show fairness evaluation results when sensitive attributes contain typographical errors, while the right subfigures present outcomes when prompts are translated into French. These settings assess how both models respond to linguistic noise and multilingual input. Gemini 1.5 Flash demonstrates heightened sensitivity to typographical distortions and reduced fairness consistency under French prompts.</figcaption>
-    </figure>
   </div>
 </section>
+
 
 
 <!-- <div id="main"> -->
