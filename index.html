@@ -388,7 +388,6 @@
   });
 </script> -->
 
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -398,12 +397,35 @@
         <div class="content has-text-justified">
           <p>
             Recent advances in Large Language Models (LLMs) have enabled their application to recommender systems (RecLLMs), yet concerns remain regarding fairness across demographic and psychological user dimensions. We introduce FairEval, a novel evaluation framework to systematically assess fairness in LLM-based recommendations. Unlike prior benchmarks that focus solely on demographic attributes, FairEval uniquely integrates personality traits with eight sensitive demographic attributes, including gender, race, and age enabling a comprehensive and nuanced assessment of user-level bias. We evaluate state-of-the-art models, including ChatGPT 4o and Gemini 1.5 Flash, on music and movie recommendation tasks using structured prompts. FairEval’s personality-aware fairness metric, PAFS, achieves high consistency scores up to 0.9969 for ChatGPT 4o and 0.9997 for Gemini 1.5 Flash, underscoring its robustness in equitable recommendations across diverse user profiles, while also uncovering fairness gaps, with SNSR disparities reaching up to 34.79%. Our results also reveal disparities in recommendation consistency across user identities and prompt formulations, including typographical and multilingual variations. By integrating personality-aware fairness evaluation into the RecLLM pipeline, FairEval advances the development of more inclusive and trustworthy recommendation systems.
+          </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
-    <br>
-    <br>
+    <br><br>
+
+    <!-- Introduction. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recommender systems, driven by large language models (LLMs), are reshaping personalized content delivery, yet concerns about fairness in these systems, especially across demographic and psychological user dimensions, persist. FairEval introduces a novel evaluation framework to address these issues by integrating both personality traits and demographic attributes, providing a more comprehensive fairness assessment. This framework, applied to state-of-the-art LLMs like ChatGPT 4o and Gemini 1.5 Flash, evaluates fairness in recommendations through a range of metrics, including personality-aware fairness indicators and traditional demographic fairness measures.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Introduction. -->
+    <br><br>
+
+    <!-- Image with Label: f1-1 -->
+    <figure>
+      <img id="model" width="80%" src="images/f1-1.png" alt="FairEval Framework Evaluation of LLM-Generated Recommendations">
+      <figcaption>Figure 1: An illustration of FairEval-generated movie recommendations under different prompt types.</figcaption>
+    </figure>
+  </div>
+</section>
+
     <!-- Paper video. -->
     <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -467,68 +489,47 @@
     </div> -->
 
     <!--/ Paper video. -->
-    <br>
-    <br>
-    <!-- Paper Model. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">The Framework of FairEval</h2>
-        <div class="content has-text-justified">
-          <p>
-            </b:> FairEval: A Framework for Evaluating Fairness in LLM-Based Recommender Systems. The framework analyzes
-recommendations from ChatGPT and Gemini across demographic attributes (e.g., age, gender, race, religion) using established
-fairness metrics—Jaccard@K, SERP*@K, PRAG*@K, PAFS@K—as well as disparity indicators (SNSR and SNSV). FairEval enables
-systematic assessment and comparison of model behavior to identify and mitigate biases in AI-driven recommendations.</b>:
-          </p>
-          <ul>
-            <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-            <li>It uses a single text encoder for all text corpus, ranging from class concepts, and referring phrases to image captions.</li>
-            <li>It decouples image and text encoder to accommodate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
+  <section class="section">
+  <!-- First image section -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths">
+      <h2 class="title is-3">The Framework of FairEval</h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>FairEval: A Framework for Evaluating Fairness in LLM-Based Recommender Systems. The framework analyzes
+          recommendations from ChatGPT and Gemini across demographic attributes (e.g., age, gender, race, religion) using established
+          fairness metrics—Jaccard@K, SERP*@K, PRAG*@K, PAFS@K—as well as disparity indicators (SNSR and SNSV). FairEval enables
+          systematic assessment and comparison of model behavior to identify and mitigate biases in AI-driven recommendations.</b>
+        </p>
+      </div>  
+      <img id="model" width="80%" src="images/f2-1.png">
+      <h3 class="subtitle has-text-centered">
+        <p style="font-family:Times New Roman"><b>The Framework of FairEval.</b></p>
+      </h3>   
+      <br><br>
+    </div>
+  </div>
 
-          </ul>
-        </div>  
-        <img id="model" width="80%" src="images/f2-1.png">
-        <h3 class="subtitle has-text-centered">
-          <p style="font-family:Times New Roman"><b>The Framework of FairEval.</b></p>
-        </h3>   
-        <br>
-        <br>
-
-      </div>
+  <!-- Second image section -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-six-fifths">
+      <h2 class="title is-3">The Framework of FairEval Prompt</h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>FairEval Prompt-Based Fairness Evaluation. This framework evaluates LLM-generated recommendations based on
+          user prompts: Neutral, Identity-Based, and Intersectional Prompts. Recommendations from GPT-4o and Gemini 1.5 Flash are
+          analyzed for fairness, with results informing bias mitigation efforts.</b>
+        </p>
+      </div>  
+      <img id="model" width="80%" src="images/f3-1.png">
+      <h3 class="subtitle has-text-centered">
+        <p style="font-family:Times New Roman"><b>The Framework of FairEval Prompt.</b></p>
+      </h3>   
+      <br><br>
     </div>
   </div>
 </section>
 
-     <br>
-    <br>
-    <!-- Paper Model. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-six-fifths">
-        <h2 class="title is-3">The Framework of FairEval Prompt</h2>
-        <div class="content has-text-justified">
-          <p>
-            </b:> FairEval Prompt-Based Fairness Evaluation. This framework evaluates LLM-generated recommendations based on
-user prompts: Neutral, Identity-Based, and Intersectional Prompts. Recommendations from GPT-4o and Gemini 1.5 Flash are
-analyzed for fairness, with results informing bias mitigation efforts.</b>:
-          </p>
-          <ul>
-            <!-- <li>It has two types of queries (latent queries and text queries) and outputs (semantic outputs and pixel-level outputs).</li>
-            <li>It uses a single text encoder for all text corpus, ranging from class concepts, and referring phrases to image captions.</li>
-            <li>It decouples image and text encoder to accommodate cross-image tasks (e.g., image-text retrieval) and within-image tasks (e.g., segmentation and captioning).</li> -->
-
-          </ul>
-        </div>  
-        <img id="model" width="80%" src="images/f3-1.png">
-        <h3 class="subtitle has-text-centered">
-          <p style="font-family:Times New Roman"><b>The Framework of FairEval Prompt.</b></p>
-        </h3>   
-        <br>
-        <br>
-
-      </div>
-    </div>
-  </div>
-</section>
 <!-- <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-six-fifths">
@@ -553,17 +554,17 @@ analyzed for fairness, with results informing bias mitigation efforts.</b>:
       <h2 class="title is-3">Results.</h2>
     </div>
   </div>
+
+  <!-- Combined figures in one section -->
+  <div class="columns is-centered">
+    <img id="results" width="70%" src="demos/Evaluation.png">
+  </div>
+  
+  <div class="columns is-centered">
+    <img id="results" width="70%" src="demos/f5-1.png">
+  </div>
 </section>
 
-<section class="section">
-  <div class="columns is-centered">
-  <img id="results" width="70%" src="demos/Evaluation.png">
-  </div>
-
-  <section class="section">
-  <div class="columns is-centered">
-  <img id="results" width="70%" src="demos/f5-1.png">
-  </div>
 <!-- <div id="main"> -->
   <!-- <div class="box"><div class="pic"><img src="demos/ad_1.png" alt=""></div></div>
   <div class="box"><div class="pic"><img src="demos/web_1.png" alt=""></div></div>
